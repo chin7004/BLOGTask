@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <title>部落格</title>
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "rjb6hw0416");
+    </script>
+  </head>
+  <body class="font-[Noto Sans TC] bg-[#FBFBFB] leading-normal font-[500]">
+    <!-- 頁首功能列 -->
+    <header class="mx-auto my-0 w-full">
+      <ul class="flex justify-center">
+        <li class="p-4 text-[1.75rem] font-[700]">
+          <a href="index.html">首頁</a>
+        </li>
+        <li class="p-4 text-[1.75rem] font-[700]">
+          <a href="blog.html">部落格</a>
+        </li>
+      </ul>
+    </header>
+    <!-- 大圖看板 -->
+    <section
+      class="flex flex-col justify-center items-center w-full xl:flex-row"
+    >
+      <img
+        class="max-w-full w-full object-cover xl:w-1/2"
+        src="./img/desktop/index/Hero Section.png"
+        alt="人物介紹照片"
+      />
+      <div
+        class="max-w-full w-full flex-shrink-0 flex flex-col justify-center p-[1.5rem] text-[#0027D5] xl:w-1/2 xl:p-[5rem] xl:text-left"
+      >
+        <h1 class="text-[3.25rem] xl:text-[5rem] 2xl:text-[7.5rem] font-[900]">
+          BLOG
+        </h1>
+        <p class="text-[1.75rem] font-[700]">前端工程師 & 職涯諮詢師</p>
+      </div>
+    </section>
+    <!-- 最新文章 -->
+    <section id="newest-issue">
+
+    </section>
+    <section>
+      <div class="px-[0.75rem] py-[4rem] max-w-[1296px] mx-auto xl:px-[0.5rem]">
+        <!-- 搜尋框 -->
+        <div
+          class="flex items-center gap-[1rem] max-w-[416px] w-full border border-[black] rounded-[40px] p-[1rem] mb-[2.5rem]"
+        >
+          <i class="fa fa-search"></i>
+          <input
+            type="text"
+            placeholder="搜尋你感興趣的文章"
+            id="input-keyword"
+            class="focus:outline-[grey] w-full bg-[#FBFBFB]"
+          />
+        </div>
+        <div>
+          <ul
+            class="flex w-fit flex-wrap justify-between"
+            id="card-area"
+          ></ul>
+        </div>
+        <div class="flex justify-center">
+          <ul class="flex p-[0.5rem] justify-center items-center">
+              <li class="w-[24px] h-[24px] flex justify-center items-center"><a href="#">&lt;</a></li>
+              <li class="w-[40px] h-[40px] flex justify-center items-center text-[#0027D5]"><a href="#">1</a></li>
+              <li class="w-[40px] h-[40px] flex justify-center items-center"><a href="#">2</li>
+              <li class="w-[40px] h-[40px] flex justify-center items-center"><a href="#">3</li>
+              <li class="w-[40px] h-[40px] flex justify-center items-center"><a href="#">4</li>
+              <li class="w-[40px] h-[40px] flex justify-center items-center"><a href="#">5</li>
+              <li class="w-[40px] h-[40px] flex justify-center items-center">...</li>
+              <li class="w-[24px] h-[24px] flex justify-center items-center"><a href="#">&gt;</a></li>
+            </ul>
+        </div>  
+      </div>
+    </section>
+    <section class="border-t border-[black] ">
+      <div class="hidden xl:px-[0.5rem] xl:flex xl:max-w-[1296px] xl:justify-between xl:mx-auto xl:py-[5rem]">
+        <h2 class="text-[2rem]">alysewang@hexschool.com</h2>
+        <ul class="flex items-center">
+          <li class="w-[44px] h-[44px]">
+            <a href="https://www.youtube.com/" target="_blank"
+              ><img src="./img/desktop/index/onlyIcon.png" alt="youtube"
+            /></a>
+          </li>
+          <li class="w-[44px] h-[44px]">
+            <a href="https://podcasts.apple.com/tw/browse" target="_blank"
+              ><img src="./img/desktop/index/onlyIcon-1.png" alt="podcasts"
+            /></a>
+          </li>
+          <li class="w-[44px] h-[44px]">
+            <a href="https://www.facebook.com/" target="_blank"
+              ><img src="./img/desktop/index/onlyIcon-2.png" alt="facebook"
+            /></a>
+          </li>
+          <li class="w-[44px] h-[44px]">
+            <a
+              href="https://www.linkedin.com/home?originalSubdomain=tw"
+              target="_blank"
+              ><img
+                src="./img/desktop/index/icons8-linkedin.png"
+                alt="linkedin"
+            /></a>
+          </li>
+          <li class="w-[44px] h-[44px]">
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img src="./img/desktop/index/onlyIcon-3.png" alt="instagram"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer class="text-center py-[1.5rem]">
+      <p>© 2025 Alyse Wang. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="./js/script_blog.js"></script>
+  </body>
+</html>
