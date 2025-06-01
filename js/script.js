@@ -1,9 +1,5 @@
 import { blogData } from "./blogData.js";
 
-document.addEventListener("DOMContentLoaded", () => {
-  // console.log("✅ DOM Loaded");
-  // console.log("✅ blogData 載入筆數：", blogData.length);
-
   const cardArea = document.getElementById("card-area");
   blogData.forEach((item) => {
     const card = document.createElement("li");
