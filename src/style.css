@@ -215,6 +215,9 @@ a {
   color: inherit;
   text-decoration: inherit;
 }
+a:hover{
+  background-color: rgb(217, 217, 217);
+}
 
 /*
 Add the correct font weight in Edge and Safari.

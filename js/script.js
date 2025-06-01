@@ -1,5 +1,7 @@
 import { blogData } from "./blogData.js";
 
+// console.log("✅ blogData 載入成功：", blogData.length);
+
   const cardArea = document.getElementById("card-area");
   blogData.forEach((item) => {
     const card = document.createElement("li");

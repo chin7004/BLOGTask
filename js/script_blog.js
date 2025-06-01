@@ -1,7 +1,5 @@
 import { blogData } from "./blogData.js";
 
-// console.log("✅ blogData 載入成功：", blogData.length);
-
 // 渲染最新文章
 let newestIssue = blogData.filter((item) => item.isNewest === true);
 const newestIssueArea = document.getElementById("newest-issue");
