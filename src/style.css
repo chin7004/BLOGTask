@@ -332,6 +332,21 @@ input:where([type='submit']) {
   /* 2 */
 }
 
+/* input type 改為 search */
+input[type="search"] {
+  -webkit-appearance: none; /* 移除 Chrome 預設樣式 */
+  outline: none;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none; /* 隱藏清除按鈕與多餘裝飾 */
+}
+
+
+
 /*
 Use the modern Firefox focus style for all focusable elements.
 */
@@ -1012,6 +1027,25 @@ video {
   --tw-text-opacity: 1;
   color: rgb(128 128 128 / var(--tw-text-opacity, 1));
 }
+
+/* 可點擊的部分都加上hover */
+.link-hover:hover {
+  color: #0027D5;
+  text-decoration: underline;
+}
+
+.icon-hover img:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+.button-hover:hover {
+  background-color: #0027D5;
+  color: white;
+  border-color: #0027D5;
+  transition: all 0.3s ease;
+}
+
 
 @media (min-width: 640px){
   .sm\:inline{
